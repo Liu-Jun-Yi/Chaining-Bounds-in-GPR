@@ -8,13 +8,41 @@ To address these limitations, we propose a chaining-based framework for estimati
 In addition to global estimation, we also develop a novel method for local uncertainty quantification at specified inputs. This approach leverages chaining geometry through partition diameters, adapting to local structure without relying on posterior variance scaling. 
 Our experimental results validate the theoretical findings and demonstrate that our method outperforms existing approaches on both synthetic and real-world datasets.
 
+## Dependencies
+```
+python>=3.8
+numpy>=1.24
+scipy>=1.10
+scikit-learn>=1.3
+torch==1.13.1+cu117
+pandas>=2.0
+requests>=2.32
+matplotlib>=3.7
+psutil>=6.0
+tqdm>=4.67
+```
+
+## Structure
+
+```
+project_root/
+├── main.py
+├── dataset_utils.py
+├── local_bound.py
+├── global_bound.py
+├── chaining.py
+├── cwc.py
+├── datasets/
+├── results/
+└── README.md
+```
 
 ## Usage
 
 If you want to run the model, run the command as below.
 
 ```
-python main.py --data dataset
+python main.py --dataset dataset
 ```
 
 ## Citing this work
