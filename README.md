@@ -50,3 +50,15 @@ python main.py --dataset dataset
 ```
 
 ## Citing this work
+
+```
+@inproceedings{liu2026practical,
+  title={Practical global and local bounds in Gaussian process regression via chaining},
+  author={Liu, Junyi and Kok, Stanley},
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  volume={40},
+  number={28},
+  pages={23757--23764},
+  year={2026}
+}
+```
